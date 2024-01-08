@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Chris Roan</div>
+        <div>
+            <ul class="nav-links">
+               <li><a href="#about">About</a></li> 
+               <li><a href="#experience">Experience</a></li> 
+               <li><a href="#projects">Projects</a></li> 
+               <li><a href="#contact">Contact</a></li> 
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Chris Roan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li> 
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> 
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> 
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile pic.jpg" alt="Chris Roan profile picture" class="profile-pic"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Chris Roan</h1>
+            <p class="section__text__p2">Full-Stack Developer, Data Analyst, Trainer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact info</button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/CRoan Resume.pdf')">Download CV</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="window.open('https://linkedin.com/in/christopher-roan-222228243//')">
+                <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="window.open('https://github.com/CRoan3')">
+                <img src="./assets/kaggle k.png" alt="My Kaggle profile" class="icon" onclick="window.open('https://kaggle.com/chrisroan')">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/About Pic placeholder.png" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>Data Analytics <br>2 years</p>
+                        <p>Web Development <br>1 Year</p>
+                        <p>Personal Training and Coaching Strength Sports<br>5 years</p>  
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Sc. in Kinesiology</p>
+                        <p>Google Data Analytics Certificate</p>
+                        <p>Data Visualization with Tableau Specialization - UC Davis</p>
+                        <p>Full Stack Web Development Bootcamp with React and Python - Bogdan Stashchuk</p>
+                        <p>NSCA Certified Personal Trainer</p>                        
+                        <p>NSCA Certified Strength and Conditioning Specialist</p>                        
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I started my adult life pursuing personal training and physicaly therapy. Along my journey, I discovered that my true passion lies in data and software/web development. I have relentlessly strived to construct a name for myself in the tech industry ever since! After my introduction to tech through data analytics, my primary focus has become being highly proficient at frontend development of various types of web applications. <b>Please check out my work!</b> </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">
+        </p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <h3>JavaScript</h3>
+                            <p>Experienced</p>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <h3>TypeScript</h3>
+                            <p>Basic</p>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <h3>React</h3>
+                            <p>Experienced</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <h3>Python</h3>
+                            <p>Intermediate</p>
+                        </article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <h3>Rest API</h3>
+                            <p>Intermediate</p>
+                        </article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <h3>MongoDB</h3>
+                            <p>Intermediate</p>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <h3>PostgreSQL</h3>
+                            <p>Intermediate</p>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <h3>Docker</h3>
+                            <p>Experienced</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Data Analytics</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <h3>Python</h3>
+                            <p>Intermediate</p>
+                        </article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <h3>R</h3>
+                            <p>Intermediate</p>
+                        </article>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <h3>SQL</h3>
+                            <p>Intermediate</p>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <h3>Tableau</h3>
+                            <p>Experienced</p>
+                            <img src="./assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                            <h3>Excel</h3>
+                            <p>Experienced</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+              </div>
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/')">
+                  Github
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/')">
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+              </div>
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/')">
+                  Github
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/')">
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+              </div>
+              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/')">
+                  Github
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/')">
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+      </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon"/>
+                <p><a href="mailto:croandev@gmail.com">croandev@gmail.com</a></p>
+                <h4>Phone: 336-269-3321</h4>
+            </div>
+        </div>
+    </section>
+    <section>
+        <p class="section__text__p1">Get in Touch</p>
+    </section>
+    <script src="script.js"></script>    
+</body>
+</html>

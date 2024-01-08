@@ -1,0 +1,10 @@
+/* If screen width <1200 px, the hamburger-nav will show (hamburger-icon shown by default)*/
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+}
